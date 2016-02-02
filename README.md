@@ -1,1 +1,0 @@
-# yana.github.com

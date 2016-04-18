@@ -36,11 +36,64 @@ nav { margin-top: 30px;}
 /* ---------------------------------------------------------------------------- */
 /* -------------------------------------Pagination----------------------------- */
 /* ---------------------------------------------------------------------------- */
-#pagination{margin: 30px auto;padding: 0;list-style: none;width: 180px;}
-#pagination li {float: left;margin-right: 10px;}
+#pagination{margin: 30px auto;padding: 0;list-style: none;width: 204px;}
+#pagination a {
+  display: block;
+  float: left;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  border-right: 1px solid #CDCDCD;
+  border-left: 1px solid #CDCDCD;
+  color: #555555;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: Times, 'Times New Roman', Georgia, Palatino;
+  /* ATTN: need a better font stack */
+  background-color: #f3f3f3;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f3f3f3), color-stop(100%, lightgrey));
+  background-image: -webkit-linear-gradient(#f3f3f3, lightgrey);
+  background-image: linear-gradient(#f3f3f3, lightgrey); }
+  .pagination a:hover, .pagination a:focus, .pagination a:active {
+    background-color: #cecece;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e4e4e4), color-stop(100%, #cecece));
+    background-image: -webkit-linear-gradient(#e4e4e4, #cecece);
+    background-image: linear-gradient(#e4e4e4, #cecece); }
+  .pagination a.disabled, .pagination a.disabled:hover, .pagination a.disabled:focus, .pagination a.disabled:active {
+    background-color: #f3f3f3;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f3f3f3), color-stop(100%, lightgrey));
+    background-image: -webkit-linear-gradient(#f3f3f3, lightgrey);
+    background-image: linear-gradient(#f3f3f3, lightgrey);
+    color: #A8A8A8;
+    cursor: default; }
+
+#pagination a:first-child {
+  border: none;
+  border-radius: 2px 0 0 2px; }
+
+#pagination a:last-child {
+  border: none;
+  border-radius: 0 2px 2px 0; }
+
+#pagination input {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 120px;
+  height: 20px;
+  outline: none;
+  border: none;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 0;
+}
+/*#pagination li {float: left;margin-right: 10px;}
 #pagination li a {display: block;	text-decoration: none; color: #717171;font: bold 11px Arial, sans-serif;padding: 5px 8px;
 	-webkit-border-radius: 3px;	-moz-border-radius: 3px;	border-radius: 3px;	background: #4D4D4D;}
-#pagination li a.current, #pagination li a:hover {color: #ffffff;	opacity: 0.7;}
+#pagination li a.current, #pagination li a:hover {color: #ffffff;	opacity: 0.7;}*/
 
 /* ---------------------------------------------------------------------------- */
 /* -------------------------------------Search--------------------------------- */

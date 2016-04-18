@@ -1,7 +1,11 @@
 .pagination {
   display: inline-block;
   border: 1px solid #CDCDCD;
-  border-radius: 3px; }
+  border-radius: 3px; 
+  width: 204px;
+  margin: 0 40%;
+  padding: 0;
+}
 
 .pagination a {
   display: block;
